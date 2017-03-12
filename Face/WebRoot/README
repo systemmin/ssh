@@ -1,0 +1,13 @@
+--------{人脸识别系统}------------1.0
+本人qq2722486927可以一块学习
+1、只需要将项目部署到Tomcat上即可
+2、修改路径
+3、接口中的apiKey 和apiSecret是本人已经在face++注册好直接使用即可
+4、识别内容有：笑容、是否佩戴眼镜，性别，年龄等。JSON返回的内容较多，自己可以通过frebug查看
+5、建议使用chrome浏览器
+6、face++官网 https://console.faceplusplus.com.cn
+注意：
+com.min.util.FaceFile.java类中doPost方法中的路径
+FaceFile.save("D:/webjsp/apache-tomcat-6.0.48/webapps/Face/"+path);
+需要真实路径就是你的项目部署在哪个路径下，一直到项目名。
+因为这里是通过字节的方式，向接口发送请求而不是url
